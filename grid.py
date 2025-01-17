@@ -1,4 +1,4 @@
-# Les grilles et les champs de texte
+# Les grilles et les champs de text
 from tkinter import *
 
 window = Tk()
