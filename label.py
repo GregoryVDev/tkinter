@@ -8,8 +8,8 @@ label1 = Label(window, text="Bonjour")
 label1.pack()
 
 # Créer un bouton afin de pouvoir quitter la fenêtre
-button_leave = Button(window, text="Quitter", command=window.quit, width = 50, height=20)
-# Afficher le bouton quitter dans la fenêtre
-button_leave.pack()
+button_leave = Button(window, text="Quitter", command=window.quit, width = 30, height=10)
+# Afficher le bouton quitter dans la fenêtre (mettre un slide pour mettre le bouton à gauche de la fenêtre)
+button_leave.pack(side=LEFT)
 
 window.mainloop()
