@@ -1,4 +1,4 @@
-# Création des boutons d'action
+# Les grilles en tkinter
 from tkinter import *
 window = Tk()
 window.geometry("1200x800")
