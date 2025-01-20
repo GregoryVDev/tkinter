@@ -1,5 +1,6 @@
-# Amélioration des grilles et des widgets
+# Les combobox en tkinter
 from tkinter import *
+from tkinter import ttk
 
 window = Tk()
 window.title("Exploration des grilles en Tkinter")
@@ -27,7 +28,7 @@ label_firstname.grid(row=1, column=1, sticky = "E", padx = 20, pady=15)
 
 
 label_name = Label(window, text="Votre nom", bd=2, font=("Arial", 15, "bold"), fg= "red", bg="#4DC3FF")
-label_name.grid(row=2,column=1, sticky = "E", padx = 20, pady=15)
+label_name.grid(row=2,column=1, sticky="E", padx = 20, pady=15)
 
 # Ajoute un input à côté du text "Votre prénom"
 text_firstname = Entry(window)
@@ -36,17 +37,23 @@ text_firstname.grid(row=1, column=2)
 text_name = Entry(window)
 text_name.grid(row=2, column=2)
 
+label_name = Label(window, text="Votre genre", bd=2, font=("Arial", 15, "bold"), fg= "red", bg="#4DC3FF")
+label_name.grid(row=3,column=1, sticky="E", padx = 20, pady=15)
+
+genderCombobox = ttk.Combobox(window, values=["Homme", "Femme", "Autres"])
+genderCombobox.grid(row=3, column=2, sticky="E", padx=20, pady=15)
+
 # Créer le bouton "valider"
 submit = Button(window, text="Valider", font=("Times new roman", 14), command=validate)
-submit.grid(row=3, column=1)
+submit.grid(row=4, column=1)
 
 # Créer le bouton "réinisialiser"
 reset = Button(window, text="Réinisialiser", font=("Times new roman", 14), command=reset)
-reset.grid(row=3, column=2)
+reset.grid(row=4, column=2)
 
 # Créer le bouton "quitter"
 leave = Button(window, text="Quitter", font=("Times new roman", 14), command=window.quit)
-leave.grid(row=3, column=3)
+leave.grid(row=4, column=3)
 
 # Permet d'afficher le text quand on a appuyé sur valider
 labelMessage = Label(window, text="", font=("Times new roman", 14), fg="blue", bg="#4DC3FF")
