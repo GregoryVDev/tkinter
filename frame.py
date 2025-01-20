@@ -33,6 +33,14 @@ label_top = Label(frame_top, text="Texte label haut", width=30, height=3)
 label_top.grid(row=0, column=1, padx=20, pady=20)
 
 
+label_top2 = Label(frame_top, text="Texte label haut", width=30, height=3)
+label_top2.grid(row=1, column=1, padx=20, pady=20)
+
+
+label_left = Label(frame_left, text="Texte label gauche", width=15, height=3)
+label_left.grid(row=0, column=1, padx=20, pady=20)
+
+
 
 # Permet d'ouvrir la page
 master.mainloop()
