@@ -13,7 +13,11 @@ def validate():
     labelMessage.config(text=message)
 
 def reset():
-    pass
+    # Quand je clique sur réinisialiser, je veux que le text soit vide
+    text_name.delete(0,END)
+    text_firstname.delete(0,END)
+    # Affiche aucun text
+    labelMessage.config(text="")
 
 
 # Ecrire un text dans la fenêtre
