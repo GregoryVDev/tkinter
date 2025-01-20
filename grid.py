@@ -62,5 +62,5 @@ labelMessage = Label(window, text="", font=("Times new roman", 14), fg="blue", b
 labelMessage.grid(row = 5, column = 1, columnspan = 2, padx = 20, pady=15)
 
 
-
+# Permet d'ouvrir la page
 window.mainloop()
