@@ -50,7 +50,8 @@ leave.grid(row=3, column=3)
 
 # Permet d'afficher le text quand on a appuyé sur valider
 labelMessage = Label(window, text="")
-labelMessage.grid(row = 5, column = 1, padx = 20)
+# Le message prend de la colonne 1 à 3
+labelMessage.grid(row = 5, column = 1, columnspan = 3, padx = 20)
 
 
 
