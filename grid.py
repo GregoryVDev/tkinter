@@ -1,10 +1,10 @@
-# Les grilles et les commandes de boutons
+# Amélioration des grilles et des widgets
 from tkinter import *
 
 window = Tk()
 window.title("Exploration des grilles en Tkinter")
-# Mettre des dimensions pour la fenêtre
-window.geometry("600x400")
+# Mettre des dimensions pour la fenêtre. On ajoute +200 pour l'espace en px qui va séparer la fenêtre du bord gauche de l'écran. On ajoute +150 pour la distance qui va séparer notre fenêtre du bord supérieur de l'écran
+window.geometry("900x600+200+150")
 
 def validate():
     # Afficher un message avec le nom et le prénom
