@@ -1,4 +1,4 @@
-# Organiser l'espace à l'aide des frames en tkinter
+# Comment placer les widgets dans les frames
 from tkinter import *
 
 master = Tk()
@@ -27,6 +27,12 @@ frame_right.place(x=200, y=200, width=1100, height=500)
 frame_bottom = Frame(master, bg="#154e72")
 # Permet de positionner le frame
 frame_bottom.place(x=000, y=700, width=1300, height=100)
+
+
+label_top = Label(frame_top, text="Texte label haut", width=30, height=10)
+label_top.grid(row=0, column=1, padx=20, pady=20)
+
+
 
 # Permet d'ouvrir la page
 master.mainloop()
