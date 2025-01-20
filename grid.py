@@ -13,15 +13,14 @@ def validate():
     labelMessage.config(text=message)
 
 def reset():
+    # Affiche aucun text
+    labelMessage.config(text="")
     # Quand je clique sur réinisialiser, je veux que le text soit vide
     text_name.delete(0,END)
     text_firstname.delete(0,END)
-    # Affiche aucun text
-    labelMessage.config(text="")
 
-
-# Ecrire un text dans la fenêtre
-label_firstname = Label(window, text="Votre prénom")
+# Ecrire un text dans la fenêtre (bd = bordure)
+label_firstname = Label(window, text="Votre prénom", bd=2, font=("Arial", 15, "bold"), fg= "red")
 # Afficher dans un grid (1 ligne, 1 colonne, en position sticky vers l'est avec un padding extérieur de 20px
 label_firstname.grid(row=1, column=1, sticky = "E", padx = 20)
 
