@@ -36,19 +36,19 @@ text_name = Entry(window)
 text_name.grid(row=2, column=2)
 
 # Créer le bouton "valider"
-submit = Button(window, text="Valider", command=validate)
+submit = Button(window, text="Valider", font=("Times new roman", 14), command=validate)
 submit.grid(row=3, column=1)
 
 # Créer le bouton "réinisialiser"
-reset = Button(window, text="Réinisialiser", command=reset)
+reset = Button(window, text="Réinisialiser", font=("Times new roman", 14), command=reset)
 reset.grid(row=3, column=2)
 
 # Créer le bouton "quitter"
-leave = Button(window, text="Quitter", command=window.quit)
+leave = Button(window, text="Quitter", font=("Times new roman", 14), command=window.quit)
 leave.grid(row=3, column=3)
 
 # Permet d'afficher le text quand on a appuyé sur valider
-labelMessage = Label(window, text="")
+labelMessage = Label(window, text="", font=("Times new roman", 14), fg="blue")
 # Le message prend de la colonne 1 à 3
 labelMessage.grid(row = 5, column = 1, columnspan = 2, padx = 20)
 
