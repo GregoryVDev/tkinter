@@ -1,4 +1,4 @@
-# Les grilles et les champs de text
+# Les grilles et les commandes de boutons
 from tkinter import *
 
 window = Tk()
@@ -7,7 +7,10 @@ window.title("Exploration des grilles en Tkinter")
 window.geometry("600x400")
 
 def validate():
-    pass
+    # Afficher un message avec le nom et le prénom
+    message = "Vous êtes : "+text_name.get()+ " "+text_firstname.get()
+    # Quand on appuie sur "valider" on affiche la variable "message"
+    labelMessage.config(text=message)
 
 def reset():
     pass
@@ -40,5 +43,11 @@ reset.grid(row=3, column=2)
 # Créer le bouton "quitter"
 leave = Button(window, text="Quitter", command=window.quit)
 leave.grid(row=3, column=3)
+
+# Permet d'afficher le text quand on a appuyé sur valider
+labelMessage = Label(window, text="")
+labelMessage.grid(row = 5, column = 1, padx = 20)
+
+
 
 window.mainloop()
