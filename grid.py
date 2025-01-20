@@ -21,12 +21,12 @@ def reset():
     text_firstname.delete(0,END)
 
 # Ecrire un text dans la fenêtre (bd = bordure)
-label_firstname = Label(window, text="Votre prénom", bd=2, font=("Arial", 15, "bold"), fg= "red")
+label_firstname = Label(window, text="Votre prénom", bd=2, font=("Arial", 15, "bold"), fg= "red", bg="#4DC3FF")
 # Afficher dans un grid (1 ligne, 1 colonne, en position sticky vers l'est avec un padding extérieur de 20px
 label_firstname.grid(row=1, column=1, sticky = "E", padx = 20, pady=15)
 
 
-label_name = Label(window, text="Votre nom", bd=2, font=("Arial", 15, "bold"), fg= "red")
+label_name = Label(window, text="Votre nom", bd=2, font=("Arial", 15, "bold"), fg= "red", bg="#4DC3FF")
 label_name.grid(row=2,column=1, sticky = "E", padx = 20, pady=15)
 
 # Ajoute un input à côté du text "Votre prénom"
@@ -49,7 +49,7 @@ leave = Button(window, text="Quitter", font=("Times new roman", 14), command=win
 leave.grid(row=3, column=3)
 
 # Permet d'afficher le text quand on a appuyé sur valider
-labelMessage = Label(window, text="", font=("Times new roman", 14), fg="blue")
+labelMessage = Label(window, text="", font=("Times new roman", 14), fg="blue", bg="#4DC3FF")
 # Le message prend de la colonne 1 à 3
 labelMessage.grid(row = 5, column = 1, columnspan = 2, padx = 20, pady=15)
 
