@@ -40,6 +40,7 @@ text_name.grid(row=2, column=2)
 label_name = Label(window, text="Votre genre", bd=2, font=("Arial", 15, "bold"), fg= "red", bg="#4DC3FF")
 label_name.grid(row=3,column=1, sticky="E", padx = 20, pady=15)
 
+# Afficher une liste déroulante avec les valeurs
 genderCombobox = ttk.Combobox(window, values=["Homme", "Femme", "Autres"])
 genderCombobox.grid(row=3, column=2, sticky="E", padx=20, pady=15)
 
