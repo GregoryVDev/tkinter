@@ -10,7 +10,7 @@ window.config(bg="#4DC3FF")
 
 def validate():
     # Afficher un message avec le nom et le prénom
-    message = "Vous êtes : "+text_name.get()+ " "+text_firstname.get()
+    message = "Vous êtes : "+text_name.get()+ " "+text_firstname.get()+" Et de genre: "+genderCombobox.get()
     # Quand on appuie sur "valider" on affiche la variable "message"
     labelMessage.config(text=message)
 
