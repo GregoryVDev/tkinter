@@ -29,7 +29,7 @@ frame_bottom = Frame(master, bg="#154e72")
 frame_bottom.place(x=000, y=700, width=1300, height=100)
 
 
-label_top = Label(frame_top, text="Texte label haut", width=30, height=10)
+label_top = Label(frame_top, text="Texte label haut", width=30, height=3)
 label_top.grid(row=0, column=1, padx=20, pady=20)
 
 
