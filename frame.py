@@ -22,5 +22,11 @@ frame_right = Frame(master, bg="#9dc8e3")
 # Permet de positionner le frame
 frame_right.place(x=200, y=200, width=1100, height=500)
 
+
+# Permet d'ajouter un background
+frame_bottom = Frame(master, bg="#154e72")
+# Permet de positionner le frame
+frame_bottom.place(x=000, y=700, width=1300, height=100)
+
 # Permet d'ouvrir la page
 master.mainloop()
